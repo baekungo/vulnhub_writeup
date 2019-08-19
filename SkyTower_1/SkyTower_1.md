@@ -44,11 +44,51 @@ SSH로 로그인해보았다. 생각해보니 필터링되어있다.
 
 그럼 이제 아까 본 3128번 포트 프록시를 이용해야겠다.
 
+![9](https://user-images.githubusercontent.com/51134298/63251013-d4618a80-c2a7-11e9-8a20-a36bac594194.png)
 
+프록시터널을 이용하였다. 
 
+![10](https://user-images.githubusercontent.com/51134298/63251015-d4fa2100-c2a7-11e9-9107-b32aa12f91b7.png)
 
+로그인을 할 수 있었지만 바로 종료가 되버린다. 
 
+그래서 설정을 다시 해주었다.
 
+![11](https://user-images.githubusercontent.com/51134298/63251016-d4fa2100-c2a7-11e9-89f7-d42bcdc1a09c.png)
+
+로그인에 성공했다.
+
+![12](https://user-images.githubusercontent.com/51134298/63251017-d4fa2100-c2a7-11e9-80e2-35165da5cf29.png)
+
+/var/www 디렉터리에 있는 login.php 파일이다.
+
+여기를 보면 DB의 id와 pw가 나와있다. 
+
+![13](https://user-images.githubusercontent.com/51134298/63251004-d3c8f400-c2a7-11e9-9fd8-2ae23b4e3ff9.png)
+
+mysql DB에 로그인해보았다. SkyTech DB로 들어갔다.
+
+![14](https://user-images.githubusercontent.com/51134298/63251005-d3c8f400-c2a7-11e9-888f-144901ee3e37.png)
+
+login 이란 테이블이 있었고 그 내용을 보았더니 아이디와 패스워드 목록이 있다. 
+
+![15](https://user-images.githubusercontent.com/51134298/63251007-d3c8f400-c2a7-11e9-89cd-51965a635e42.png)
+
+sara의 id로 로그인해보았다.
+
+![16](https://user-images.githubusercontent.com/51134298/63251009-d4618a80-c2a7-11e9-8583-bdfbe8d4b0e3.png)
+
+sudo 권한을 보았다.
+
+cat 명령어와 ls 명령어로 /accounts/* 를 볼 수 있는 것 같다.
+
+그런데 accounts 디렉터리는 비어있었다.
+
+하지만 root 디렉터리의 내용을 보는 방법은 있었다. 
+
+![17](https://user-images.githubusercontent.com/51134298/63251012-d4618a80-c2a7-11e9-94b6-2bf50a1fb41f.png)
+
+이렇게 root에 있는 flag를 읽을 수 있었다.
 
 
 
